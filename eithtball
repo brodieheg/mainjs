@@ -1,0 +1,19 @@
+var userName = " ";
+var userQuestion = "Will I live to 100?"
+if (userName === true)
+{
+    console.log (`Hello, ${name}!`)
+}
+if (userName === false) {console.log ("Hello!")};
+console.log (`${name}, you have asked ${userQuestion} `)
+var chance = Math.floor(Math.random() * 8);
+var eightball = " ";
+if (chance === 0) {eightball = "It is certain";}
+else if (chance === 1) {eightball = "It is decidedly so";}
+else if (chance === 2) {eightball = "Reply hazy. Try again";}
+else if (chance === 3) {eightball = "Cannot predict now";}
+else if (chance === 4) {eightball = "Do not count on it";}
+else if (chance === 5) {eightball = "My sources say no";}
+else if (chance === 6) {eightball = "Outlook not so good";}
+else if (chance === 7) {eightball = "Signs point to yes";}
+console.log (eightball);
