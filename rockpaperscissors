@@ -1,0 +1,28 @@
+ function getUserChoice (userInput) {
+   userInput = userInput.toLowerCase(); if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb')
+   {return userInput} else {console.log('try again');} 
+}
+ function getComputerChoice () {var computerChoice = Math.floor (Math.random () * 3) 
+    if (computerChoice === 0) {computerChoice = 'rock'} else if (computerChoice === 1) {computerChoice = 'paper';} 
+    else if (computerChoice === 2) {computerChoice = 'scissors'};
+return computerChoice};
+
+function determineWinner (userChoice, computerChoice) 
+{
+   if  (userChoice === computerChoice) {return "It's a tie!"}
+   if (userChoice === 'bomb') {return 'Bomb explodes everything, you win!'}
+   if (userChoice === "rock") {if (computerChoice === "paper") {return "Paper covers rock. Computer wins!"} 
+   else if (computerChoice === "scissors") {return "Rock smashes scissors, you win!"}}
+ 
+    if (userChoice === "scissors") {if (computerChoice === "rock") {
+    return "Rock smashes scissors, you lose"} else if (computerChoice === "paper")
+    {return "Scissors cut paper, you win!"}
+   }
+
+if (userChoice === "paper") {if (computerChoice === "rock") {return "Paper covers rock, you win!"}
+else if (computerChoice === "scissors") {return "Scissors cut paper, you lose"}
+}};
+
+
+function playGame (userInput) {console.log(determineWinner (getUserChoice(userInput), getComputerChoice())) 
+};
