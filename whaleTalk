@@ -1,0 +1,17 @@
+function whaleTalk(whaleTalkInput) {
+    const input = ["a", "e", "i", "o", "u"];
+    var resultArray = []
+    for (let i = 0; i < whaleTalkInput.length; i++) {
+        const letter = whaleTalkInput[i];
+        for (let j = 0; j < input.length; j++) {
+            const vowel = input[j];
+            if (letter === vowel) {
+                resultArray.push (letter)
+                if (letter === "e" || letter === "u") {resultArray.push (letter)
+                    
+                }
+    }
+             }
+        }resultJoin = resultArray.join("")
+         resultCaps = resultJoin.toUpperCase()
+        return resultCaps}
